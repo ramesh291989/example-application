@@ -1,8 +1,10 @@
 name: new Release
 on:
   push:
+    branches:
+      - master
     tags:
-      - v1.*
+      - v*
 
 jobs:
   build:
