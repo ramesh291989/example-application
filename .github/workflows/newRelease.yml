@@ -2,9 +2,9 @@ name: new Release
 on:
   push:
     branches:
-      -'main'
+      - master
     tags:
-      -'v*'
+      - v*
 
 jobs:
   build:
