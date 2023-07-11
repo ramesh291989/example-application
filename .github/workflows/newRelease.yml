@@ -26,7 +26,7 @@ jobs:
     needs: build
     steps:
       - name: Add TAG_NAME env property
-        run:  echo "TAG_NAME=`echo ${GITHUB_REF#refs/tags/}`" >> $GITHUB_ENV
+        run:  echo "TAG_NAME=`latest`" >> $GITHUB_ENV
       - name: Open PR in Environment Repository for new App Version
         env:
           ENV_REPO: ${{ github.event.repository.owner.name }}/example-environment
