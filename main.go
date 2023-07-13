@@ -1,4 +1,4 @@
-package infracube_go_app
+package main
 
 import (
 	"fmt"
